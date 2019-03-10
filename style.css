@@ -32,6 +32,10 @@ body{
     background: rgb(44, 44, 44);
 }
 
+.contact, .technologies{
+    border-top: 0.5px solid rgb(46, 46, 46);
+}
+
 .hero{
     width: 100%;
     height: 310px;
@@ -192,6 +196,9 @@ body{
     .nav-about-me{
         height: 78px;
         margin-top: -78px;
+    }
+    .contact, .technologies{
+        border-top: 0;
     }
     .hero{
         margin: -100px 0 20px;
