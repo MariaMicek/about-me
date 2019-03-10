@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    background: #000;
+}
+
+.nav__ul{
+    list-style-type: none;
+}
+
+.nav__a{ 
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav__a:hover{
+    background: rgb(44, 44, 44);
+}
+
+.hero{
+    width: 100%;
+    height: 310px;
+    background-image: url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.hero__h1{
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.hero__h2{
+    font-weight: normal;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.about-me__img{
+    text-align: center;
+}
+
+.img{
+    width: 80%;
+}
+
+.about-me__span{
+    font-size: 22px;
+}
+
+.about-me__p{
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tech__h3, .contact__h3{
+    display: block;
+    background: rgb(202, 202, 202);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.tech{
+    text-align: center;
+}
+
+.tech__img{
+    width: 30%;
+    margin: 20px auto 15px;
+    opacity: 0.85;
+}
+
+.tech__p{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.html, .css{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.form{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.form__label{
+    display: block;
+    margin: 10px;
+}
+
+.form__input{
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form__button{
+    padding: 12px 15px;
+    text-transform: uppercase;
+    background: rgb(202, 202, 202);
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.form__button:hover{
+    background: rgb(155, 155, 155);
+    cursor: pointer;
+    padding: 12px 22px;
+    letter-spacing: 0.8px;
+}
+
+.footer{
+    background: #000;
+    padding: 10px 10px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__p{
+    width: 50%;
+    color: rgb(202, 202, 202);
+    font-size: 15px;
+}
+
+.footer__links{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__a{
+    width: 20%;
+    text-align: right;
+}
+
+.footer__img{
+    width: 60%;
+    opacity: 0.9;
+}
+
+
+@media screen and (min-width: 500px){
+    .nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .nav__ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-tech{
+        height: 48px;
+        margin-top: -48px;
+    }
+    .nav-about-me{
+        height: 78px;
+        margin-top: -78px;
+    }
+    .hero{
+        margin: -100px 0 20px;
+        width: 100%;
+        height: 550px;
+    }
+    .hero__h1{
+        font-size: 40px;
+        padding-top:200px;
+    }
+    .hero__h2{
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    .about-me{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img{
+        width: 60%;
+    }
+    .about-me__p{
+        width: 90%;
+    }
+    .tech__img{
+        width: 20%;
+    } 
+    .footer__links{
+        margin-right: 10px;
+    }   
+    .footer__a{
+        width: 50px;
+    }
+    .footer__img{
+        width:30px;
+    }
+}
+
+@media screen and (min-width: 870px){
+    .hero{
+        margin-top: -200px;
+        margin-bottom: 30px;
+        height: 860px;
+    }
+    .hero__h1{
+        font-size: 53px;
+        padding-top: 340px;
+    }
+    .hero__h2{
+        font-size: 43px;
+    }
+    .about-me{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+    }
+    .about-me__img{
+        width: 40%;
+    }
+    .about-me__p{
+        width: 60%;
+        margin: 0;
+        line-height: 30px;
+    }
+    .img{
+        width: 80%;
+    }
+    .tech{
+        width: 90%;
+        margin: 15px auto;
+        display: flex;
+    }
+    .tech__element{
+        flex-grow: 1;
+    }
+    .html, .css{
+        border-right: 1px solid rgb(202, 202, 202);
+        border-bottom: 0;
+    }
+    .form{
+        width: 50%;
+    }
+}
