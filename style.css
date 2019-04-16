@@ -26,10 +26,12 @@ body{
     display: block;
     padding: 15px 20px;
     text-align: center;
+    transition: all 0.5s;
 }
 
 .nav__a:hover{
     background: rgb(44, 44, 44);
+    transition: all 0.5s;
 }
 
 .contact, .technologies{
@@ -127,7 +129,7 @@ body{
 .form__input{
     display: block;
     padding: 10px;
-    border: 1px solid #000;
+    border: 1px solid rgb(134, 134, 134);
     width: 70%;
     margin: 0 auto;
 }
@@ -136,8 +138,9 @@ body{
     padding: 12px 15px;
     text-transform: uppercase;
     background: rgb(202, 202, 202);
-    border: 1px solid #000;
+    border: 1px solid rgb(134, 134, 134);
     margin-top: 20px;
+    transition: all 0.5s;
 }
 
 .form__button:hover{
@@ -145,6 +148,7 @@ body{
     cursor: pointer;
     padding: 12px 22px;
     letter-spacing: 0.8px;
+    transition: all 0.5s;
 }
 
 .footer{
